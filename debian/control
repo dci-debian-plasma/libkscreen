@@ -3,7 +3,7 @@ Priority: extra
 Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 XSBC-Original-Maintainer: Scarlett Clark <scarlett@scarlettgatelyclark.com>
 Build-Depends: debhelper (>= 9.0.0), cmake, pkg-kde-tools,
- extra-cmake-modules (>= 0.0.13), libqjson-dev, qtbase5-dev, 
+ extra-cmake-modules (>= 0.0.14), libqjson-dev, qtbase5-dev, 
  libqt5x11extras5-dev, libxrandr-dev, pkg-kde-tools, pkg-config,
  libx11-xcb-dev, libxcb-render-util0-dev, libxcb-image0-dev,
  libxcb-randr0-dev, libxcb-composite0-dev, libxcb-damage0-dev,
