@@ -2,4 +2,4 @@ usr/include/*
 usr/lib/*/*.so
 usr/lib/*/cmake/*
 usr/lib/*/pkgconfig/*
-usr/share/qt5/mkspecs/modules/qt_KScreen.pri
+usr/lib/*/qt5/mkspecs/modules/qt_KScreen.pri
