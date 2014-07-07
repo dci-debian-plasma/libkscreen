@@ -2,13 +2,29 @@ Source: libkscreen
 Priority: extra
 Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
 XSBC-Original-Maintainer: Scarlett Clark <scarlett@scarlettgatelyclark.com>
-Build-Depends: debhelper (>= 9.0.0), cmake, pkg-kde-tools,
- extra-cmake-modules (>= 0.0.14), libqjson-dev, qtbase5-dev, 
- libqt5x11extras5-dev, libxrandr-dev, pkg-kde-tools, pkg-config,
- libx11-xcb-dev, libxcb-render-util0-dev, libxcb-image0-dev,
- libxcb-randr0-dev, libxcb-composite0-dev, libxcb-damage0-dev,
- libxcb-shape0-dev, libxcb-shm0-dev, libxcb-sync-dev,
- libxcb-xfixes0-dev, libxcb1-dev, xcb-proto, xauth, xvfb
+Build-Depends: cmake,
+               debhelper (>= 9.0.0),
+               extra-cmake-modules (>= 0.0.14),
+               libqjson-dev,
+               libqt5x11extras5-dev,
+               libx11-xcb-dev,
+               libxcb-composite0-dev,
+               libxcb-damage0-dev,
+               libxcb-image0-dev,
+               libxcb-randr0-dev,
+               libxcb-render-util0-dev,
+               libxcb-shape0-dev,
+               libxcb-shm0-dev,
+               libxcb-sync-dev,
+               libxcb-xfixes0-dev,
+               libxcb1-dev,
+               libxrandr-dev,
+               pkg-config,
+               pkg-kde-tools,
+               qtbase5-dev,
+               xauth,
+               xcb-proto,
+               xvfb
 Standards-Version: 3.9.5
 Section: libs
 Homepage: https://projects.kde.org/projects/playground/libs/libkscreen
@@ -16,7 +32,7 @@ Homepage: https://projects.kde.org/projects/playground/libs/libkscreen
 Package: libkscreen2-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends}, libkf5screen5 (= ${binary:Version})
+Depends: libkf5screen5 (= ${binary:Version}), ${misc:Depends}
 Description: library for screen management - development files
  The KDE multiple monitor support is trying be as smart as possible
  adapting the behavior of it to each use case making the configuration
@@ -27,7 +43,7 @@ Description: library for screen management - development files
 Package: libkf5screen5
 Section: libs
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: library for screen management - shared library
  The KDE multiple monitor support is trying be as smart as possible
  adapting the behavior of it to each use case making the configuration
@@ -39,7 +55,7 @@ Package: libkscreen2-dbg
 Section: debug
 Architecture: any
 Recommends: qtbase5-dbg
-Depends: ${misc:Depends}, libkf5screen5 (= ${binary:Version})
+Depends: libkf5screen5 (= ${binary:Version}), ${misc:Depends}
 Description: library for screen management - debug info
  The KDE multiple monitor support is trying be as smart as possible
  adapting the behavior of it to each use case making the configuration
