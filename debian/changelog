@@ -1,3 +1,10 @@
+libkscreen (1.73-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream RC release
+  * Upstream renamed to libkscreen
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 07 Jul 2014 14:38:00 +0200
+
 libkscreen2 (1.72-0ubuntu1) utopic; urgency=medium
 
   [ Scarlett Clark ]
