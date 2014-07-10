@@ -29,7 +29,7 @@ Standards-Version: 3.9.5
 Section: libs
 Homepage: https://projects.kde.org/projects/playground/libs/libkscreen
 
-Package: libkscreen2-dev
+Package: libkf5screen-dev
 Section: libdevel
 Architecture: any
 Depends: libkf5screen5 (= ${binary:Version}), ${misc:Depends}
@@ -51,7 +51,7 @@ Description: library for screen management - shared library
  .
  This package contains the shared library
 
-Package: libkscreen2-dbg
+Package: libkscreen-dbg
 Section: debug
 Architecture: any
 Recommends: qtbase5-dbg
