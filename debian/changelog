@@ -5,6 +5,7 @@ libkscreen (5.0.91-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Scarlett Clark ]
   * Fix rules 
+  * Update watch to http://download.kde.org 
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 10 Jul 2014 21:20:23 +0200
 
