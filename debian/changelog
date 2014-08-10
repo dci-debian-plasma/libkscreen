@@ -1,3 +1,9 @@
+libkscreen (5.0.92-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Sun, 10 Aug 2014 16:57:26 +0200
+
 libkscreen (5.0.91-0ubuntu1) utopic; urgency=medium
 
   [ Jonathan Riddell ]
