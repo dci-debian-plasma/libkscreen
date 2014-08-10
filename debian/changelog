@@ -1,12 +1,12 @@
-libkscreen (5.0.91-0ubuntu1) UNRELEASED; urgency=medium
+libkscreen (5.0.91-0ubuntu1) utopic; urgency=medium
 
   [ Jonathan Riddell ]
   * New upstream release
 
   [ Scarlett Clark ]
-  * Fix rules 
-  * Update watch to http://download.kde.org 
-  * Update extra-cmake-modules depend version 
+  * Fix rules
+  * Update watch to http://download.kde.org
+  * Update extra-cmake-modules depend version
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 10 Jul 2014 21:20:23 +0200
 
