@@ -1,3 +1,9 @@
+libkscreen (5.0.93-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Thu, 18 Sep 2014 07:13:45 -0700
+
 libkscreen (5.0.92-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Jonathan Riddell ]
