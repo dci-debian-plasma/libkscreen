@@ -1,3 +1,9 @@
+libkscreen (5.0.95-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 01 Oct 2014 15:47:21 +0200
+
 libkscreen (5.0.93-0ubuntu1) utopic; urgency=medium
 
   * New upstream release
