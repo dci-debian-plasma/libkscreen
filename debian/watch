@@ -1,4 +1,4 @@
 version=3
-http://download.kde.org/unstable/plasma/([\d\.]+)/src/libkscreen-(.*)\.tar\.xz
+http://download.kde.org/unstable/plasma/([\d\.]+)/libkscreen-(.*)\.tar\.xz
 
 http://download.kde.org/stable/plasma/([\d\.]+)/libkscreen-(.*)\.tar\.xz
