@@ -1,10 +1,10 @@
-libkscreen (5.0.95-0ubuntu1) UNRELEASED; urgency=medium
+libkscreen (5.1.0-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Jonathan Riddell ]
-  * New upstream beta release
+  * New upstream release
 
   [ Scarlett Clark ]
-  * Add missing build depends for various xcb protocols. 
+  * Add missing build depends for various xcb protocols.
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 01 Oct 2014 15:47:21 +0200
 
