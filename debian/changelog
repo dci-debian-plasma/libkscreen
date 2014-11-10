@@ -1,8 +1,8 @@
-libkscreen (5.1.1-0ubuntu1) UNRELEASED; urgency=medium
+libkscreen (5.1.1-0ubuntu1) vivid; urgency=medium
 
   * New upstream release.
 
- -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 07 Nov 2014 03:47:05 +0000
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 10 Nov 2014 19:48:54 +0100
 
 libkscreen (5.1.0.1-0ubuntu1) UNRELEASED; urgency=medium
 
