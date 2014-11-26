@@ -1,6 +1,11 @@
 libkscreen (5.1.80-0ubuntu1) UNRELEASED; urgency=medium
 
+  [ Jonathan Riddell ]
   * Update for soversion bump
+
+  [ Philip Muškovac ]
+  * Add plugin symbols to symbols file as they're shipped in the library
+    package
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 26 Nov 2014 16:11:26 +0100
 
