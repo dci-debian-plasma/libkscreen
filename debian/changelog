@@ -1,3 +1,9 @@
+libkscreen (5.1.80-0ubuntu1) UNRELEASED; urgency=medium
+
+  * Update for soversion bump
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 26 Nov 2014 16:11:26 +0100
+
 libkscreen (5.1.1-0ubuntu2) vivid; urgency=medium
 
   * Add symbols file
