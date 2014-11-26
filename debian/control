@@ -72,7 +72,7 @@ Package: libkscreen-dbg
 Section: debug
 Architecture: any
 Recommends: qtbase5-dbg
-Depends: libkf5screen5 (= ${binary:Version}), ${misc:Depends}
+Depends: libkf5screen6 (= ${binary:Version}), ${misc:Depends}
 Description: library for screen management - debug info
  The KDE multiple monitor support is trying be as smart as possible
  adapting the behavior of it to each use case making the configuration
