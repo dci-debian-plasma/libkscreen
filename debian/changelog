@@ -1,3 +1,9 @@
+libkscreen (5.1.2-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 12 Dec 2014 14:37:52 +0100
+
 libkscreen (5.1.1-0ubuntu2) vivid; urgency=medium
 
   * Add symbols file
