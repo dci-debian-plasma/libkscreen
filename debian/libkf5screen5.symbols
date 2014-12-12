@@ -1,4 +1,16 @@
-# SymbolsHelper-Confirmed: 5.1.1 amd64
+# SymbolsHelper-Confirmed: 5.1.2 i386
+KSC_Fake.so libkf5screen5 #MINVER#
+ qt_plugin_instance@Base 5.1.1
+ qt_plugin_query_metadata@Base 5.1.1
+KSC_QScreen.so libkf5screen5 #MINVER#
+ qt_plugin_instance@Base 5.1.1
+ qt_plugin_query_metadata@Base 5.1.1
+KSC_XRandR.so libkf5screen5 #MINVER#
+ qt_plugin_instance@Base 5.1.1
+ qt_plugin_query_metadata@Base 5.1.1
+KSC_XRandR11.so libkf5screen5 #MINVER#
+ qt_plugin_instance@Base 5.1.1
+ qt_plugin_query_metadata@Base 5.1.1
 libKF5Screen.so.5 libkf5screen5 #MINVER#
  _ZN7KScreen13ConfigMonitor11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.1.1
  _ZN7KScreen13ConfigMonitor11qt_metacastEPKc@Base 5.1.1
@@ -18,11 +30,11 @@ libKF5Screen.so.5 libkf5screen5 #MINVER#
  _ZN7KScreen4Edid11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.1.1
  _ZN7KScreen4Edid11qt_metacastEPKc@Base 5.1.1
  _ZN7KScreen4Edid16staticMetaObjectE@Base 5.1.1
- _ZN7KScreen4Edid7Private5parseEPKhm@Base 5.1.1
- _ZN7KScreen4EdidC1EPKhmP7QObject@Base 5.1.1
+ (subst)_ZN7KScreen4Edid7Private5parseEPKh{size_t}@Base 5.1.1
+ (subst)_ZN7KScreen4EdidC1EPKh{size_t}P7QObject@Base 5.1.1
  _ZN7KScreen4EdidC1EPNS0_7PrivateE@Base 5.1.1
  _ZN7KScreen4EdidC1Ev@Base 5.1.1
- _ZN7KScreen4EdidC2EPKhmP7QObject@Base 5.1.1
+ (subst)_ZN7KScreen4EdidC2EPKh{size_t}P7QObject@Base 5.1.1
  _ZN7KScreen4EdidC2EPNS0_7PrivateE@Base 5.1.1
  _ZN7KScreen4EdidC2Ev@Base 5.1.1
  _ZN7KScreen4EdidD0Ev@Base 5.1.1
@@ -200,15 +212,3 @@ libKF5Screen.so.5 libkf5screen5 #MINVER#
  _ZTVN7KScreen6ScreenE@Base 5.1.1
  _Zls6QDebugPKN7KScreen4ModeE@Base 5.1.1
  _Zls6QDebugPKN7KScreen6OutputE@Base 5.1.1
-KSC_Fake.so libkf5screen5 #MINVER#
- qt_plugin_instance@Base 5.1.1
- qt_plugin_query_metadata@Base 5.1.1
-KSC_QScreen.so libkf5screen5 #MINVER#
- qt_plugin_instance@Base 5.1.1
- qt_plugin_query_metadata@Base 5.1.1
-KSC_XRandR.so libkf5screen5 #MINVER#
- qt_plugin_instance@Base 5.1.1
- qt_plugin_query_metadata@Base 5.1.1
-KSC_XRandR11.so libkf5screen5 #MINVER#
- qt_plugin_instance@Base 5.1.1
- qt_plugin_query_metadata@Base 5.1.1
