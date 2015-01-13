@@ -1,4 +1,43 @@
-libkscreen (5.0.93-0ubuntu1) UNRELEASED; urgency=medium
+libkscreen (5.1.80-0ubuntu1) UNRELEASED; urgency=medium
+
+  [ Jonathan Riddell ]
+  * Update for soversion bump
+
+  [ Philip Muškovac ]
+  * Add plugin symbols to symbols file as they're shipped in the library
+    package
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 26 Nov 2014 16:11:26 +0100
+
+libkscreen (5.1.2-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 12 Dec 2014 14:37:52 +0100
+
+libkscreen (5.1.1-0ubuntu2) vivid; urgency=medium
+
+  * Add symbols file
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 26 Nov 2014 15:36:31 +0100
+
+libkscreen (5.1.1-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release.
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 10 Nov 2014 19:48:54 +0100
+
+libkscreen (5.1.0.1-0ubuntu1) UNRELEASED; urgency=medium
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+  [ Scarlett Clark ]
+  * Add missing build depends for various xcb protocols.
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 01 Oct 2014 15:47:21 +0200
+
+libkscreen (5.0.93-0ubuntu1) utopic; urgency=medium
 
   * New upstream release
 
