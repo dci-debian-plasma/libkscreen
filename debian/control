@@ -60,7 +60,8 @@ Package: libkf5screen6
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Conflicts: libkf5screen5
+Breaks: libkf5screen5 (<< 4:5.2.0)
+Replaces: libkf5screen5 (<< 4:5.2.0)
 Description: library for screen management - shared library
  The KDE multiple monitor support is trying be as smart as possible
  adapting the behavior of it to each use case making the configuration
