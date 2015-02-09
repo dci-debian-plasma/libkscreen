@@ -7,6 +7,7 @@ libkscreen (4:5.2.0-1~) UNRELEASED; urgency=medium
 
   [ Maximiliano Curia ]
   * Prepare initial Debian release.
+  * Add myself as Uploader.
 
  -- Maximiliano Curia <maxy@debian.org>  Mon, 09 Feb 2015 16:29:21 +0100
 
