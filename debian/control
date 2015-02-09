@@ -43,7 +43,7 @@ Build-Depends: cmake,
                xauth,
                xcb-proto,
                xvfb
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: https://projects.kde.org/projects/playground/libs/libkscreen
 
 Package: libkf5screen-dev
