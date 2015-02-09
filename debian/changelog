@@ -1,4 +1,4 @@
-libkscreen (4:5.2.0-1~) UNRELEASED; urgency=medium
+libkscreen (4:5.2.0-1) experimental; urgency=medium
 
   [ Harald Sitter ]
   * Use software transition flags for kscreen5->6
@@ -16,7 +16,7 @@ libkscreen (4:5.2.0-1~) UNRELEASED; urgency=medium
   * Update watch file.
   * Add basic autopkgtests support.
 
- -- Maximiliano Curia <maxy@debian.org>  Mon, 09 Feb 2015 16:29:21 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 09 Feb 2015 17:18:18 +0100
 
 libkscreen (4:5.2.0-0ubuntu1) vivid; urgency=medium
 
