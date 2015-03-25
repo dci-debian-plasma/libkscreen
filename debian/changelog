@@ -5,6 +5,24 @@ libkscreen (4:5.2.2-1~) UNRELEASED; urgency=medium
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 25 Mar 2015 09:51:20 +0100
 
+libkscreen (4:5.2.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 24 Mar 2015 07:34:45 -0700
+
+libkscreen (4:5.2.1-0ubuntu1) vivid; urgency=medium
+
+  [ Harald Sitter ]
+  * Use software transition flags for kscreen5->6
+    Using versioned breaks/replaces instead of an unversioned
+    conflicts.
+
+  [ Scarlett Clark ]
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 23 Feb 2015 09:43:36 -0800
+
 libkscreen (4:5.2.0-1) experimental; urgency=medium
 
   [ Harald Sitter ]
