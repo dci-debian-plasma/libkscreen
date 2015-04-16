@@ -43,7 +43,9 @@ Build-Depends: cmake,
                xvfb
 Standards-Version: 3.9.5
 Section: libs
-Homepage: https://projects.kde.org/projects/playground/libs/libkscreen
+Homepage: https://projects.kde.org/projects/kde/workspace/libkscreen
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/plasma/libkscreen.git
+Vcs-Git: git://anonscm.debian.org/pkg-kde/plasma/libkscreen.git
 
 Package: libkf5screen-dev
 Section: libdevel
