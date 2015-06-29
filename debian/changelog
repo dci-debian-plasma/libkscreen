@@ -21,6 +21,20 @@ libkscreen (4:5.3.1-0ubuntu1) wily; urgency=medium
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 05 Jun 2015 02:35:42 +0200
 
+libkscreen (4:5.3.1-1~) UNRELEASED; urgency=medium
+
+  * New upstream release (5.3.0).
+  * New upstream release (5.3.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 05 Jun 2015 11:55:03 +0200
+
+libkscreen (4:5.2.2-1) experimental; urgency=medium
+
+  * New upstream release (5.2.1).
+  * New upstream release (5.2.2).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 25 Mar 2015 23:17:37 +0100
+
 libkscreen (4:5.2.2-0ubuntu1) vivid; urgency=medium
 
   * New upstream release
@@ -38,6 +52,26 @@ libkscreen (4:5.2.1-0ubuntu1) vivid; urgency=medium
   * New upstream release
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 23 Feb 2015 09:43:36 -0800
+
+libkscreen (4:5.2.0-1) experimental; urgency=medium
+
+  [ Harald Sitter ]
+  * Use software transition flags for kscreen5->6
+    Using versioned breaks/replaces instead of an unversioned
+    conflicts.
+
+  [ Maximiliano Curia ]
+  * Prepare initial Debian release.
+  * Add myself as Uploader.
+  * Bump Standards-Version to 3.9.6, no changes needed.
+  * Update build dependencies to build against experimental and to
+    follow cmake.
+  * Update copyright information.
+  * Update install files.
+  * Update watch file.
+  * Add basic autopkgtests support.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 09 Feb 2015 17:18:18 +0100
 
 libkscreen (4:5.2.0-0ubuntu1) vivid; urgency=medium
 
@@ -59,12 +93,6 @@ libkscreen (4:5.1.95-0ubuntu1) vivid; urgency=medium
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 15 Jan 2015 01:32:51 +0100
 
-libkscreen (5.1.2-0ubuntu1) UNRELEASED; urgency=medium
-
-  * New upstream release
-
- -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 12 Dec 2014 14:37:52 +0100
-
 libkscreen (5.1.1-0ubuntu2) vivid; urgency=medium
 
   * Add symbols file
@@ -74,34 +102,18 @@ libkscreen (5.1.1-0ubuntu2) vivid; urgency=medium
 libkscreen (5.1.1-0ubuntu1) vivid; urgency=medium
 
   * New upstream release.
-
- -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 10 Nov 2014 19:48:54 +0100
-
-libkscreen (5.1.0.1-0ubuntu1) UNRELEASED; urgency=medium
-
-  [ Jonathan Riddell ]
-  * New upstream release
-
-  [ Scarlett Clark ]
   * Add missing build depends for various xcb protocols.
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 01 Oct 2014 15:47:21 +0200
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 10 Nov 2014 19:48:54 +0100
 
 libkscreen (5.0.93-0ubuntu1) utopic; urgency=medium
 
   * New upstream release
 
- -- Scarlett Clark <sgclark@kubuntu.org>  Thu, 18 Sep 2014 07:13:45 -0700
-
-libkscreen (5.0.92-0ubuntu1) UNRELEASED; urgency=medium
-
-  [ Jonathan Riddell ]
-  * New upstream bugfix release
-
   [ Harald Sitter ]
   * switch to new pkg-kde-tools
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Sun, 10 Aug 2014 16:57:26 +0200
+ -- Scarlett Clark <sgclark@kubuntu.org>  Thu, 18 Sep 2014 07:13:45 -0700
 
 libkscreen (5.0.91-0ubuntu1) utopic; urgency=medium
 
