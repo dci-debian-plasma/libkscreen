@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:5.3.0 amd64
+# SymbolsHelper-Confirmed: 4:5.4.0 amd64
 KSC_Fake.so libkf5screen6 #MINVER#
  qt_plugin_instance@Base 5.1.80
  qt_plugin_query_metadata@Base 5.1.80
@@ -28,9 +28,9 @@ libKF5Screen.so.6 libkf5screen6 #MINVER#
  _ZN7KScreen13ConfigMonitor7Private9edidReadyEP23QDBusPendingCallWatcher@Base 5.1.1
  _ZN7KScreen13ConfigMonitor7PrivateC1EPS0_@Base 5.1.1
  _ZN7KScreen13ConfigMonitor7PrivateC2EPS0_@Base 5.1.1
- (optional=gccinternal)_ZN7KScreen13ConfigMonitor7PrivateD0Ev@Base 5.1.1
- (optional=gccinternal)_ZN7KScreen13ConfigMonitor7PrivateD1Ev@Base 5.1.1
- (optional=gccinternal)_ZN7KScreen13ConfigMonitor7PrivateD2Ev@Base 5.1.1
+ (optional=gccinternal|arch=!amd64)_ZN7KScreen13ConfigMonitor7PrivateD0Ev@Base 5.1.1
+ (optional=gccinternal|arch=!amd64)_ZN7KScreen13ConfigMonitor7PrivateD1Ev@Base 5.1.1
+ (optional=gccinternal|arch=!amd64)_ZN7KScreen13ConfigMonitor7PrivateD2Ev@Base 5.1.1
  _ZN7KScreen13ConfigMonitor8instanceEv@Base 5.1.1
  _ZN7KScreen13ConfigMonitor9addConfigERK14QSharedPointerINS_6ConfigEE@Base 5.1.1
  _ZN7KScreen13ConfigMonitorC1Ev@Base 5.1.1
@@ -152,9 +152,9 @@ libKF5Screen.so.6 libkf5screen6 #MINVER#
  _ZN7KScreen6Config7Private11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:5.3.0
  _ZN7KScreen6Config7Private11qt_metacastEPKc@Base 4:5.3.0
  _ZN7KScreen6Config7Private16staticMetaObjectE@Base 4:5.3.0
- (optional=gccinternal)_ZN7KScreen6Config7PrivateD0Ev@Base 4:5.3.0
- (optional=gccinternal)_ZN7KScreen6Config7PrivateD1Ev@Base 4:5.3.0
- (optional=gccinternal)_ZN7KScreen6Config7PrivateD2Ev@Base 4:5.3.0
+ (optional=gccinternal|arch=!amd64)_ZN7KScreen6Config7PrivateD0Ev@Base 4:5.3.0
+ (optional=gccinternal|arch=!amd64)_ZN7KScreen6Config7PrivateD1Ev@Base 4:5.3.0
+ (optional=gccinternal|arch=!amd64)_ZN7KScreen6Config7PrivateD2Ev@Base 4:5.3.0
  _ZN7KScreen6Config8setValidEb@Base 5.1.1
  _ZN7KScreen6Config9addOutputERK14QSharedPointerINS_6OutputEE@Base 5.1.1
  _ZN7KScreen6Config9setScreenERK14QSharedPointerINS_6ScreenEE@Base 5.1.1
@@ -169,6 +169,7 @@ libKF5Screen.so.6 libkf5screen6 #MINVER#
  _ZN7KScreen6Output11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.1.1
  _ZN7KScreen6Output11qt_metacastEPKc@Base 5.1.1
  _ZN7KScreen6Output11setRotationENS0_8RotationE@Base 5.1.1
+ _ZN7KScreen6Output11sizeChangedEv@Base 4:5.4.0
  _ZN7KScreen6Output12setConnectedEb@Base 5.1.1
  _ZN7KScreen6Output13clonesChangedEv@Base 5.1.1
  _ZN7KScreen6Output13outputChangedEv@Base 5.1.1
@@ -186,6 +187,7 @@ libKF5Screen.so.6 libkf5screen6 #MINVER#
  _ZN7KScreen6Output7setEdidERK10QByteArray@Base 5.1.1
  _ZN7KScreen6Output7setIconERK7QString@Base 5.1.1
  _ZN7KScreen6Output7setNameERK7QString@Base 5.1.1
+ _ZN7KScreen6Output7setSizeERK5QSize@Base 4:5.4.0
  _ZN7KScreen6Output7setTypeENS0_4TypeE@Base 5.1.1
  _ZN7KScreen6Output8setModesERK4QMapI7QString14QSharedPointerINS_4ModeEEE@Base 5.1.1
  _ZN7KScreen6Output9setClonesE5QListIiE@Base 5.1.1
@@ -276,6 +278,7 @@ libKF5Screen.so.6 libkf5screen6 #MINVER#
  _ZNK7KScreen6Output4iconEv@Base 5.1.1
  _ZNK7KScreen6Output4modeERK7QString@Base 5.1.1
  _ZNK7KScreen6Output4nameEv@Base 5.1.1
+ _ZNK7KScreen6Output4sizeEv@Base 4:5.4.0
  _ZNK7KScreen6Output4typeEv@Base 5.1.1
  _ZNK7KScreen6Output5cloneEv@Base 5.1.1
  _ZNK7KScreen6Output5modesEv@Base 5.1.1
