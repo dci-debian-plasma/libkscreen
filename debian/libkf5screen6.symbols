@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:5.3.95 amd64
+# SymbolsHelper-Confirmed: 4:5.4.2+git20151012.1045 amd64 i386
 KSC_Fake.so libkf5screen6 #MINVER#
  qt_plugin_instance@Base 5.1.80
  qt_plugin_query_metadata@Base 5.1.80
@@ -38,16 +38,14 @@ libKF5Screen.so.6 libkf5screen6 #MINVER#
  _ZN7KScreen14BackendManager11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.1.1
  _ZN7KScreen14BackendManager11qt_metacastEPKc@Base 5.1.1
  _ZN7KScreen14BackendManager12backendReadyEP29OrgKdeKscreenBackendInterface@Base 5.1.1
- _ZN7KScreen14BackendManager12startBackendERK7QString@Base 5.1.1
+ _ZN7KScreen14BackendManager12startBackendERK7QStringRK4QMapIS1_8QVariantE@Base 4:5.4.2+git20151012.1045
  _ZN7KScreen14BackendManager14requestBackendEv@Base 5.1.1
  _ZN7KScreen14BackendManager14sMaxCrashCountE@Base 5.1.1
  _ZN7KScreen14BackendManager15shutdownBackendEv@Base 5.1.1
  _ZN7KScreen14BackendManager16emitBackendReadyEv@Base 5.1.1
- _ZN7KScreen14BackendManager16launcherFinishedEiN8QProcess10ExitStatusE@Base 5.1.1
  _ZN7KScreen14BackendManager16staticMetaObjectE@Base 5.1.1
- _ZN7KScreen14BackendManager19backendServiceReadyEv@Base 5.1.1
  _ZN7KScreen14BackendManager19invalidateInterfaceEv@Base 5.1.1
- _ZN7KScreen14BackendManager21launcherDataAvailableEv@Base 5.1.1
+ _ZN7KScreen14BackendManager20onBackendRequestDoneEP23QDBusPendingCallWatcher@Base 4:5.4.2+git20151012.1045
  _ZN7KScreen14BackendManager26backendServiceUnregisteredERK7QString@Base 5.1.1
  _ZN7KScreen14BackendManager8instanceEv@Base 5.1.1
  _ZN7KScreen14BackendManager9sInstanceE@Base 5.1.1
@@ -60,6 +58,7 @@ libKF5Screen.so.6 libkf5screen6 #MINVER#
  _ZN7KScreen15AbstractBackend11qt_metacastEPKc@Base 5.1.1
  _ZN7KScreen15AbstractBackend13configChangedERK14QSharedPointerINS_6ConfigEE@Base 5.1.1
  _ZN7KScreen15AbstractBackend16staticMetaObjectE@Base 5.1.1
+ _ZN7KScreen15AbstractBackend4initERK4QMapI7QString8QVariantE@Base 4:5.4.2+git20151012.1045
  _ZN7KScreen15ConfigOperation10emitResultEv@Base 5.1.1
  _ZN7KScreen15ConfigOperation11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.1.1
  _ZN7KScreen15ConfigOperation11qt_metacastEPKc@Base 5.1.1
