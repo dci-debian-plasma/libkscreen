@@ -1,17 +1,17 @@
 # SymbolsHelper-Confirmed: 4:5.4.2+git20151012.1045 amd64 i386
-KSC_Fake.so libkf5screen6 #MINVER#
+KSC_Fake.so libkf5screen7 #MINVER#
  qt_plugin_instance@Base 5.1.80
  qt_plugin_query_metadata@Base 5.1.80
-KSC_QScreen.so libkf5screen6 #MINVER#
+KSC_QScreen.so libkf5screen7 #MINVER#
  qt_plugin_instance@Base 5.1.80
  qt_plugin_query_metadata@Base 5.1.80
-KSC_XRandR.so libkf5screen6 #MINVER#
+KSC_XRandR.so libkf5screen7 #MINVER#
  qt_plugin_instance@Base 5.1.80
  qt_plugin_query_metadata@Base 5.1.80
-KSC_XRandR11.so libkf5screen6 #MINVER#
+KSC_XRandR11.so libkf5screen7 #MINVER#
  qt_plugin_instance@Base 5.1.80
  qt_plugin_query_metadata@Base 5.1.80
-libKF5Screen.so.6 libkf5screen6 #MINVER#
+libKF5Screen.so.6 libkf5screen7 #MINVER#
  _ZN7KScreen13ConfigMonitor11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.1.1
  _ZN7KScreen13ConfigMonitor11qt_metacastEPKc@Base 5.1.1
  _ZN7KScreen13ConfigMonitor12removeConfigERK14QSharedPointerINS_6ConfigEE@Base 5.1.1
