@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:5.4.3+git20151204.0224+16.04 amd64 i386
+# SymbolsHelper-Confirmed: 4:5.4.3+git20151204.0251+16.04 amd64 i386
 KSC_Fake.so libkf5screen7 #MINVER#
  qt_plugin_instance@Base 5.1.80
  qt_plugin_query_metadata@Base 5.1.80
