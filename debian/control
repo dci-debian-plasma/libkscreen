@@ -37,6 +37,7 @@ Description: library for screen management - development files
 
 Package: libkf5screen6
 Architecture: any
+Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libkf5screen5 (<< 4:5.2.0)
 Replaces: libkf5screen5 (<< 4:5.2.0)
@@ -46,6 +47,19 @@ Description: library for screen management - shared library
  of monitors as simple as plugging them to your computer.
  .
  This package contains the shared library
+
+Package: libkf5screen-bin
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: libkf5screen6 (<< 4:5.5~)
+Replaces: libkf5screen6 (<< 4:5.5~)
+Description: library for screen management - helpers
+ The KDE multiple monitor support is trying be as smart as possible
+ adapting the behavior of it to each use case making the configuration
+ of monitors as simple as plugging them to your computer.
+ .
+ This package contains the library helpers and the corresponding dbus service.
 
 Package: libkscreen-dbg
 Section: debug
