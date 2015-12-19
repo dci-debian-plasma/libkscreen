@@ -3,6 +3,7 @@ libkscreen (4:5.5.1-0ubuntu1) UNRELEASED; urgency=medium
   * New upstream release Xenial
   * The .so in this tar is version 6. Update all
     files to reflect that. 
+  * Add the renamed files in git. 
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 18 Dec 2015 07:36:47 -0800
 
