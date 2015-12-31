@@ -9,6 +9,9 @@ libkscreen (4:5.5.2-0ubuntu1) UNRELEASED; urgency=medium
   [ Clive Johnston ]
   * new upstream release
 
+  [ Philip Muškovac ]
+  * Set the SOVERSION back to 6 in the symbols file 
+
  -- Clive Johnston <clivejo@aol.com>  Tue, 29 Dec 2015 17:47:50 +0000
 
 libkscreen (4:5.4.3-0ubuntu1) xenial; urgency=medium
