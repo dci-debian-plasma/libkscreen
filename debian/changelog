@@ -1,10 +1,14 @@
 libkscreen (4:5.5.1-0ubuntu2) UNRELEASED; urgency=medium
 
+  [ Scarlett Clark ]
   * Fix unstable build to reflect the .so version of 7.
   * Add the new files and fix the install file. 
   * Fix symbols file merge markers. 
   * Fix the .so version in the symbols file. 
   * Refresh symbols. 
+
+  [ Bhushan Shah ]
+  * Add build-dep to kwayland-dev
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Sat, 19 Dec 2015 08:10:24 -0800
 
