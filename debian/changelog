@@ -20,6 +20,7 @@ libkscreen (4:5.5.3-0ubuntu1) UNRELEASED; urgency=medium
     Left so verion at 6 for compatibility with release tar. 
   * Fix control file to reflect so version 6. 
   * Some more cleanup to fix archive. 
+  * Fix unstable by bumping so to 7 to match master. 
 
  -- Clive Johnston <clivejo@aol.com>  Thu, 07 Jan 2016 17:58:01 +0000
 
