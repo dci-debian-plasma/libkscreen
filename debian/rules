@@ -11,4 +11,5 @@ override_dh_strip:
 	$(overridden_command) --dbgsym-migration='libkscreen-dbg (<= 4:5.5.4-2~~)'
 
 override_dh_auto_test:
-	-xvfb-run -a dh_auto_test
+	# Disable tests at build time
+	:

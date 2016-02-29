@@ -1,3 +1,9 @@
 #!/bin/sh
 
-dh_auto_test
+export LANG=C.UTF-8
+export LC_ALL=C.UTF-8
+export HOME=$(mktemp -d)
+trap "rm -rf ${HOME}" EXIT
+
+xvfb-run -a --server-args="-screen 0 1024x768x24" \
+    dbus-launch --exit-with-session dh_auto_test
