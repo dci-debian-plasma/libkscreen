@@ -3,6 +3,9 @@
 
 include /usr/share/pkg-kde-tools/qt-kde-team/3/debian-qt-kde.mk
 
+override_dh_shlibdeps:
+	$(overridden_command) (foreach p,$(shell dh_listpackages -a | egrep ^lib.*[0-9]+$$),-p$p) -- -xlibkf5screen-bin
+
 override_dh_strip:
 	$(overridden_command) --dbg-package=libkscreen-dbg
 

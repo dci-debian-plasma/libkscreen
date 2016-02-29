@@ -1,6 +1,6 @@
 libkscreen (4:5.5.4-2~) UNRELEASED; urgency=medium
 
-  * 
+  * Avoid circular dependencies.
 
  -- Maximiliano Curia <maxy@debian.org>  Mon, 29 Feb 2016 16:20:21 +0100
 
