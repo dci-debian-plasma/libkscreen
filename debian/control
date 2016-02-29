@@ -4,8 +4,8 @@ Priority: optional
 Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Maximiliano Curia <maxy@debian.org>
 Build-Depends: cmake (>= 2.8.12),
-               debhelper (>= 9),
                dbus-x11,
+               debhelper (>= 9),
                extra-cmake-modules (>= 5.14.0~),
                libqt5x11extras5-dev (>= 5.4),
                libx11-dev,
@@ -61,16 +61,3 @@ Description: library for screen management - helpers
  of monitors as simple as plugging them to your computer.
  .
  This package contains the library helpers and the corresponding dbus service.
-
-Package: libkscreen-dbg
-Section: debug
-Priority: extra
-Architecture: any
-Recommends: qtbase5-dbg
-Depends: libkf5screen6 (= ${binary:Version}), ${misc:Depends}
-Description: library for screen management - debug info
- The KDE multiple monitor support is trying be as smart as possible
- adapting the behavior of it to each use case making the configuration
- of monitors as simple as plugging them to your computer.
- .
- This package contains the debugging symbols.
