@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:5.5.0 amd64
+# SymbolsHelper-Confirmed: 4:5.5.4 alpha arm64 armel armhf hppa i386 mips mips64el mipsel powerpc ppc64 ppc64el s390x sparc64 x32
 KSC_Fake.so libkf5screen6 #MINVER#
  qt_plugin_instance@Base 5.1.80
  qt_plugin_query_metadata@Base 5.1.80
