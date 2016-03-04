@@ -2,6 +2,10 @@
 KSC_Fake.so libkf5screen7 #MINVER#
  qt_plugin_instance@Base 5.1.80
  qt_plugin_query_metadata@Base 5.1.80
+KSC_KWayland.so libkf5screen7 #MINVER#
+ _Zls6QDebugPKN7KScreen13WaylandOutputE@Base 4:5.5.4+git20160304.2136
+ qt_plugin_instance@Base 4:5.5.4+git20160304.2136
+ qt_plugin_query_metadata@Base 4:5.5.4+git20160304.2136
 KSC_QScreen.so libkf5screen7 #MINVER#
  qt_plugin_instance@Base 5.1.80
  qt_plugin_query_metadata@Base 5.1.80
