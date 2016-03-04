@@ -6,6 +6,9 @@ libkscreen (4:5.5.4-2ubuntu1~) UNRELEASED; urgency=medium
   [ Philip Muškovac ]
   * libkf5kscreen-bin breaks/replaces libkf5screen6 << 4:5.5.4-2~
 
+  [ Clive Johnston ]
+  * Adding kwayland-dev as build dep
+
  -- Philip Muškovac <yofel@kubuntu.org>  Fri, 04 Mar 2016 21:01:37 +0100
 
 libkscreen (4:5.5.4-2~) UNRELEASED; urgency=medium
