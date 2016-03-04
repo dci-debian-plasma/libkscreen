@@ -1,66 +1,36 @@
-libkscreen (4:5.5.4-0ubuntu1) UNRELEASED; urgency=medium
-
-  [ Scarlett Clark ]
-  * New upstream release Xenial
-  * The .so in this tar is version 6. Update all
-    files to reflect that. 
-  * Add the renamed files in git. 
+libkscreen (4:5.5.4-2ubuntu1~) UNRELEASED; urgency=medium
 
   [ Clive Johnston ]
-  * new upstream release
+  * Merge with debian git master
 
   [ Philip Muškovac ]
-  * Set the SOVERSION back to 6 in the symbols file 
+  * libkf5kscreen-bin breaks/replaces libkf5screen6 << 4:5.5.4-2~
 
-  [ Clive Johnston ]
-  * New upstream release
+ -- Philip Muškovac <yofel@kubuntu.org>  Fri, 04 Mar 2016 21:01:37 +0100
 
-  [ Scarlett Clark ]
-  * merge unstable to get debian merge into archive.
-    Left so verion at 6 for compatibility with release tar. 
-  * Fix control file to reflect so version 6. 
-  * Some more cleanup to fix archive. 
-  * Fix unstable by bumping so to 7 to match master. 
-  * Add the missing files. 
+libkscreen (4:5.5.4-2~) UNRELEASED; urgency=medium
 
-  [ Clive Johnston ]
-  * New upstream release
+  * Avoid circular dependencies.
+  * Bump Standards-Version to 3.9.7, no changes needed.
 
-  [ Scarlett Clark ]
-  * Refresh symbols. 
-  * Fix symbols file with correct version. 
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 29 Feb 2016 16:20:21 +0100
 
- -- Clive Johnston <clivejo@aol.com>  Wed, 27 Jan 2016 20:13:39 +0000
+libkscreen (4:5.5.4-1) experimental; urgency=medium
 
-libkscreen (4:5.5.1-0ubuntu2) UNRELEASED; urgency=medium
+  * New upstream release (5.5.0).
+  * Split -bin package from libkf5screen6.
+  * New upstream release (5.5.1).
+  * New upstream release (5.5.2).
+  * New upstream release (5.5.3).
+  * New upstream release (5.5.4).
 
-  [ Scarlett Clark ]
-  * Fix unstable build to reflect the .so version of 7.
-  * Add the new files and fix the install file. 
-  * Fix symbols file merge markers. 
-  * Fix the .so version in the symbols file. 
-  * Refresh symbols. 
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 27 Jan 2016 16:48:59 +0100
 
-  [ Bhushan Shah ]
-  * Add build-dep to kwayland-dev
-
- -- Scarlett Clark <sgclark@kubuntu.org>  Sat, 19 Dec 2015 08:10:24 -0800
-
-libkscreen (4:5.5.1-0ubuntu1) UNRELEASED; urgency=medium
-
-  * New upstream release Xenial
-  * The .so in this tar is version 6. Update all
-    files to reflect that. 
-  * Add the renamed files in git. 
-  * Debian merge: No remaining changes. 
-
- -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 18 Dec 2015 07:36:47 -0800
-
-libkscreen (4:5.4.3-1~) UNRELEASED; urgency=medium
+libkscreen (4:5.4.3-1) unstable; urgency=medium
 
   * New upstream release (5.4.3).
 
- -- Maximiliano Curia <maxy@debian.org>  Thu, 05 Nov 2015 16:57:17 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 01 Dec 2015 11:45:49 +0100
 
 libkscreen (4:5.4.3-0ubuntu1) xenial; urgency=medium
 
