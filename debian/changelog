@@ -1,4 +1,4 @@
-libkscreen (4:5.5.4-2ubuntu1~) UNRELEASED; urgency=medium
+libkscreen (4:5.5.4-2~ubuntu1) UNRELEASED; urgency=medium
 
   [ Clive Johnston ]
   * Merge with debian git master
