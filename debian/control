@@ -1,7 +1,8 @@
 Source: libkscreen
 Section: libs
 Priority: optional
-Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Maximiliano Curia <maxy@debian.org>
 Build-Depends: cmake (>= 2.8.12),
                debhelper (>= 9),
@@ -22,6 +23,13 @@ Standards-Version: 3.9.6
 Homepage: https://projects.kde.org/projects/kde/workspace/libkscreen
 Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/plasma/libkscreen.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/plasma/libkscreen.git
+
+Package: kscreen-doctor
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: testing tool for libkscreen
+ A testing and debugging tool for KScreen which allows changes to the
+ screen setup from the command-line.
 
 Package: libkf5screen-dev
 Section: libdevel
