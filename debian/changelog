@@ -1,6 +1,11 @@
 libkscreen (4:5.5.5-0ubuntu1) UNRELEASED; urgency=medium
 
+  [ Philip Muškovac ]
   * New upstream bugfix release
+
+  [ Clive Johnston ]
+  * Added lintian override for libkf5screen-bin being declared in
+    symbols file. 
 
  -- Philip Muškovac <yofel@kubuntu.org>  Tue, 08 Mar 2016 22:31:37 +0100
 
