@@ -1,2 +1,3 @@
+usr/bin/kscreen-doctor
 usr/lib/*/libexec/kf5/kscreen_backend_launcher
 usr/share/dbus-1/services/org.kde.kscreen.service

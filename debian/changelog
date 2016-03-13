@@ -5,6 +5,7 @@ libkscreen (4:5.5.5-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Clive Johnston ]
   * Adding kwayland-dev as build dep
+  * Add usr/bin/kscreen-doctor to libkf5screen-bin.install
 
  -- Philip Muškovac <yofel@kubuntu.org>  Tue, 08 Mar 2016 22:31:37 +0100
 
