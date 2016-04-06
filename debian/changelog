@@ -1,9 +1,15 @@
-libkscreen (4:5.5.4-2~) UNRELEASED; urgency=medium
+libkscreen (4:5.6.2-1~1.gbpfbc70c) UNRELEASED; urgency=medium
 
+  ** SNAPSHOT build @fbc70cd3692b1bc0bf66aa913b378e5d665de0e2 **
+
+  [ Maximiliano Curia ]
   * Avoid circular dependencies.
   * Bump Standards-Version to 3.9.7, no changes needed.
 
- -- Maximiliano Curia <maxy@debian.org>  Mon, 29 Feb 2016 16:20:21 +0100
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Wed, 06 Apr 2016 23:17:19 +0200
 
 libkscreen (4:5.5.4-1) experimental; urgency=medium
 
