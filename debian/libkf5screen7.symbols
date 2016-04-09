@@ -1,17 +1,5 @@
 # SymbolsHelper-Confirmed: 4:5.5.4 alpha arm64 armel armhf hppa i386 mips mips64el mipsel powerpc ppc64 ppc64el s390x sparc64 x32
-KSC_Fake.so libkf5screen6 #MINVER#
- qt_plugin_instance@Base 5.1.80
- qt_plugin_query_metadata@Base 5.1.80
-KSC_QScreen.so libkf5screen6 #MINVER#
- qt_plugin_instance@Base 5.1.80
- qt_plugin_query_metadata@Base 5.1.80
-KSC_XRandR.so libkf5screen6 #MINVER#
- qt_plugin_instance@Base 5.1.80
- qt_plugin_query_metadata@Base 5.1.80
-KSC_XRandR11.so libkf5screen6 #MINVER#
- qt_plugin_instance@Base 5.1.80
- qt_plugin_query_metadata@Base 5.1.80
-libKF5Screen.so.6 libkf5screen6 #MINVER#, libkf5screen-bin
+libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin
  _ZN7KScreen13ConfigMonitor11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.1.1
  _ZN7KScreen13ConfigMonitor11qt_metacastEPKc@Base 5.1.1
  _ZN7KScreen13ConfigMonitor12removeConfigERK14QSharedPointerINS_6ConfigEE@Base 5.1.1
