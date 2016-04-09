@@ -1,10 +1,11 @@
-# SymbolsHelper-Confirmed: 4:5.5.4 alpha arm64 armel armhf hppa i386 mips mips64el mipsel powerpc ppc64 ppc64el s390x sparc64 x32
+# SymbolsHelper-Confirmed: 4:5.6.2 amd64
 libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin
  _ZN7KScreen13ConfigMonitor11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.1.1
  _ZN7KScreen13ConfigMonitor11qt_metacastEPKc@Base 5.1.1
  _ZN7KScreen13ConfigMonitor12removeConfigERK14QSharedPointerINS_6ConfigEE@Base 5.1.1
  _ZN7KScreen13ConfigMonitor16staticMetaObjectE@Base 5.1.1
  _ZN7KScreen13ConfigMonitor20configurationChangedEv@Base 5.1.1
+ _ZN7KScreen13ConfigMonitor23connectInProcessBackendEPNS_15AbstractBackendE@Base 4:5.6.2
  _ZN7KScreen13ConfigMonitor7Private11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.1.1
  _ZN7KScreen13ConfigMonitor7Private11qt_metacastEPKc@Base 5.1.1
  _ZN7KScreen13ConfigMonitor7Private13updateConfigsERK14QSharedPointerINS_6ConfigEE@Base 5.1.1
@@ -23,6 +24,7 @@ libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin
  _ZN7KScreen13ConfigMonitorD0Ev@Base 5.1.1
  _ZN7KScreen13ConfigMonitorD1Ev@Base 5.1.1
  _ZN7KScreen13ConfigMonitorD2Ev@Base 5.1.1
+ _ZN7KScreen14BackendManager10initMethodEv@Base 4:5.6.2
  _ZN7KScreen14BackendManager11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.1.1
  _ZN7KScreen14BackendManager11qt_metacastEPKc@Base 5.1.1
  _ZN7KScreen14BackendManager12backendReadyEP29OrgKdeKscreenBackendInterface@Base 5.1.1
@@ -32,11 +34,15 @@ libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin
  _ZN7KScreen14BackendManager15shutdownBackendEv@Base 5.1.1
  _ZN7KScreen14BackendManager16emitBackendReadyEv@Base 5.1.1
  _ZN7KScreen14BackendManager16staticMetaObjectE@Base 5.1.1
+ _ZN7KScreen14BackendManager17loadBackendPluginEP13QPluginLoaderRK7QStringRK4QMapIS3_8QVariantE@Base 4:5.6.2
  _ZN7KScreen14BackendManager19invalidateInterfaceEv@Base 5.1.1
+ _ZN7KScreen14BackendManager20loadBackendInProcessERK7QString@Base 4:5.6.2
  _ZN7KScreen14BackendManager20onBackendRequestDoneEP23QDBusPendingCallWatcher@Base 4:5.5.0
  _ZN7KScreen14BackendManager26backendServiceUnregisteredERK7QString@Base 5.1.1
  _ZN7KScreen14BackendManager8instanceEv@Base 5.1.1
  _ZN7KScreen14BackendManager9sInstanceE@Base 5.1.1
+ _ZN7KScreen14BackendManager9setConfigE14QSharedPointerINS_6ConfigEE@Base 4:5.6.2
+ _ZN7KScreen14BackendManager9setMethodENS0_6MethodE@Base 4:5.6.2
  _ZN7KScreen14BackendManagerC1Ev@Base 5.1.1
  _ZN7KScreen14BackendManagerC2Ev@Base 5.1.1
  _ZN7KScreen14BackendManagerD0Ev@Base 5.1.1
@@ -79,8 +85,8 @@ libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin
  _ZN7KScreen18GetConfigOperation11qt_metacastEPKc@Base 5.1.1
  _ZN7KScreen18GetConfigOperation16staticMetaObjectE@Base 5.1.1
  _ZN7KScreen18GetConfigOperation5startEv@Base 5.1.1
- _ZN7KScreen18GetConfigOperationC1E6QFlagsINS0_6OptionEEP7QObject@Base 5.1.1
- _ZN7KScreen18GetConfigOperationC2E6QFlagsINS0_6OptionEEP7QObject@Base 5.1.1
+ _ZN7KScreen18GetConfigOperationC1E6QFlagsINS_15ConfigOperation6OptionEEP7QObject@Base 4:5.6.2
+ _ZN7KScreen18GetConfigOperationC2E6QFlagsINS_15ConfigOperation6OptionEEP7QObject@Base 4:5.6.2
  _ZN7KScreen18GetConfigOperationD0Ev@Base 5.1.1
  _ZN7KScreen18GetConfigOperationD1Ev@Base 5.1.1
  _ZN7KScreen18GetConfigOperationD2Ev@Base 5.1.1
@@ -201,6 +207,7 @@ libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin
  _ZNK7KScreen13ConfigMonitor7Private10metaObjectEv@Base 5.1.1
  _ZNK7KScreen14BackendManager10metaObjectEv@Base 5.1.1
  _ZNK7KScreen14BackendManager6configEv@Base 5.1.1
+ _ZNK7KScreen14BackendManager6methodEv@Base 4:5.6.2
  _ZNK7KScreen15AbstractBackend10metaObjectEv@Base 5.1.1
  _ZNK7KScreen15AbstractBackend4edidEi@Base 5.1.1
  _ZNK7KScreen15ConfigOperation10metaObjectEv@Base 5.1.1
