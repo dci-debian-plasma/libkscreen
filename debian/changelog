@@ -1,4 +1,4 @@
-libkscreen (4:5.5.5-0ubuntu1) UNRELEASED; urgency=medium
+libkscreen (4:5.5.5-0ubuntu1) xenial; urgency=medium
 
   [ Philip Muškovac ]
   * New upstream bugfix release
@@ -7,7 +7,7 @@ libkscreen (4:5.5.5-0ubuntu1) UNRELEASED; urgency=medium
   * Added lintian override for libkf5screen-bin being declared in
     symbols file. 
 
- -- Philip Muškovac <yofel@kubuntu.org>  Tue, 08 Mar 2016 22:31:37 +0100
+ -- Philip Muškovac <yofel@kubuntu.org>  Thu, 14 Apr 2016 13:47:51 -0700
 
 libkscreen (4:5.5.4-2~ubuntu1) xenial; urgency=medium
 
