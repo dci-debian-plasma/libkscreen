@@ -1,5 +1,5 @@
 # SymbolsHelper-Confirmed: 4:5.6.2 amd64
-libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin
+libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin (>= 4:5.6.2~)
  _ZN7KScreen13ConfigMonitor11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.1.1
  _ZN7KScreen13ConfigMonitor11qt_metacastEPKc@Base 5.1.1
  _ZN7KScreen13ConfigMonitor12removeConfigERK14QSharedPointerINS_6ConfigEE@Base 5.1.1
