@@ -1,6 +1,6 @@
-libkscreen (4:5.6.2-1~3.gbp71d1da) UNRELEASED; urgency=medium
+libkscreen (4:5.6.2-1~4.gbp85ba95) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @71d1dac38fb48818e05eb43444caf7085cc87622 **
+  ** SNAPSHOT build @85ba95e0ac85a61debfd24809e69a6bcad7ac889 **
 
   [ Maximiliano Curia ]
   * Avoid circular dependencies.
@@ -8,6 +8,8 @@ libkscreen (4:5.6.2-1~3.gbp71d1da) UNRELEASED; urgency=medium
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
+  * Update install files
+  * Bump Standards-Version to 3.9.8
 
   [ Maximiliano Curia ]
   * uscan no longer supports this kind of watch files.
@@ -19,7 +21,7 @@ libkscreen (4:5.6.2-1~3.gbp71d1da) UNRELEASED; urgency=medium
   [ Automatic packaging ]
   * Update symbols files for the new soversion
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Sat, 09 Apr 2016 20:35:07 +0200
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Fri, 15 Apr 2016 10:02:14 +0200
 
 libkscreen (4:5.5.5-1~) UNRELEASED; urgency=medium
 
