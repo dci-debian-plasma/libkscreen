@@ -1,0 +1,96 @@
+Description: Make kwayland optional
+ This allows the build of libkscreen and its dependencies in non linux arches.
+Author: Maximiliano Curia <maxy@debian.org>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -20,7 +20,7 @@
+ find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Core DBus Gui Test X11Extras)
+ 
+ # Wayland backend
+-find_package(KF5Wayland CONFIG REQUIRED)
++find_package(KF5Wayland CONFIG)
+ add_feature_info("KF5Wayland" KF5Wayland_FOUND "Required for building libkscreen's KWayland backend")
+ 
+ # xrandr backend
+--- a/backends/CMakeLists.txt
++++ b/backends/CMakeLists.txt
+@@ -1,6 +1,8 @@
+ add_subdirectory(fake)
+ add_subdirectory(qscreen)
+-add_subdirectory(kwayland)
++if(${KF5Wayland_FOUND})
++	add_subdirectory(kwayland)
++endif()
+ 
+ if(${XCB_RANDR_FOUND})
+     message(STATUS "Will build xrandr backend.")
+--- a/autotests/CMakeLists.txt
++++ b/autotests/CMakeLists.txt
+@@ -1,6 +1,9 @@
+ add_definitions(-DTEST_DATA="${CMAKE_CURRENT_SOURCE_DIR}/configs/")
+ 
+-include_directories(${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_SOURCE_DIR}/tests/kwayland/)
++include_directories(${CMAKE_CURRENT_BINARY_DIR})
++if(${KF5Wayland_FOUND})
++    include_directories(${CMAKE_SOURCE_DIR}/tests/kwayland/)
++endif()
+ 
+ macro(KSCREEN_ADD_TEST)
+     foreach(_testname ${ARGN})
+@@ -21,22 +24,24 @@
+ kscreen_add_test(testconfigmonitor)
+ kscreen_add_test(testinprocess)
+ 
+-set(KSCREEN_WAYLAND_LIBS
+-    KF5::WaylandServer KF5::WaylandClient
+-)
+-
+-# For WaylandConfigReader and TestServer
+-set(KSCREEN_WAYLAND_SRCS
+-    ${CMAKE_SOURCE_DIR}/tests/kwayland/waylandconfigreader.cpp
+-    ${CMAKE_SOURCE_DIR}/tests/kwayland/waylandtestserver.cpp
+-)
+-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../backends/kwayland)
+-
+-kscreen_add_test(testkwaylandbackend)
+-kscreen_add_test(testkwaylandconfig)
+-
+-set(KSCREEN_WAYLAND_LIBS "")
+-set(KSCREEN_WAYLAND_SRCS "")
++if(${KF5Wayland_FOUND})
++    set(KSCREEN_WAYLAND_LIBS
++        KF5::WaylandServer KF5::WaylandClient
++    )
++    
++    # For WaylandConfigReader and TestServer
++    set(KSCREEN_WAYLAND_SRCS
++        ${CMAKE_SOURCE_DIR}/tests/kwayland/waylandconfigreader.cpp
++        ${CMAKE_SOURCE_DIR}/tests/kwayland/waylandtestserver.cpp
++    )
++    include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../backends/kwayland)
++    
++    kscreen_add_test(testkwaylandbackend)
++    kscreen_add_test(testkwaylandconfig)
++    
++    set(KSCREEN_WAYLAND_LIBS "")
++    set(KSCREEN_WAYLAND_SRCS "")
++endif()
+ 
+ 
+ if (ENABLE_XRANDR_TESTS)
+--- a/tests/CMakeLists.txt
++++ b/tests/CMakeLists.txt
+@@ -1,4 +1,6 @@
+ add_executable(printconfig testplugandplay.cpp testpnp.cpp)
+ target_link_libraries(printconfig Qt5::Gui KF5::Screen)
+ 
+-add_subdirectory(kwayland)
++if(${KF5Wayland_FOUND})
++    add_subdirectory(kwayland)
++endif()
