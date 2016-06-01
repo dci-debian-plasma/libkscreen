@@ -1,3 +1,10 @@
+libkscreen (4:5.6.4-3) unstable; urgency=medium
+
+  * New patch: make_kwayland_optional.diff
+  * Build against kwayland only on linux
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 01 Jun 2016 11:45:24 +0200
+
 libkscreen (4:5.6.4-2) unstable; urgency=medium
 
   * Release to unstable.
