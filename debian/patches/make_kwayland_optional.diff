@@ -1,15 +1,19 @@
-Description: Make kwayland optional
- This allows the build of libkscreen and its dependencies in non linux arches.
-Author: Maximiliano Curia <maxy@debian.org>
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Tue, 14 Jun 2016 15:17:09 +0200
+Subject: make_kwayland_optional
 
 ---
-The information above should follow the Patch Tagging Guidelines, please
-checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
-are templates for supplementary fields that you might want to add:
+ CMakeLists.txt           |  2 +-
+ autotests/CMakeLists.txt | 39 ++++++++++++++++++++++-----------------
+ backends/CMakeLists.txt  |  4 +++-
+ tests/CMakeLists.txt     |  4 +++-
+ 4 files changed, 29 insertions(+), 20 deletions(-)
 
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 8c8a78d..aea9536 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -20,7 +20,7 @@
+@@ -20,7 +20,7 @@ set(REQUIRED_QT_VERSION 5.2.0)
  find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Core DBus Gui Test X11Extras)
  
  # Wayland backend
@@ -18,18 +22,8 @@ are templates for supplementary fields that you might want to add:
  add_feature_info("KF5Wayland" KF5Wayland_FOUND "Required for building libkscreen's KWayland backend")
  
  # xrandr backend
---- a/backends/CMakeLists.txt
-+++ b/backends/CMakeLists.txt
-@@ -1,6 +1,8 @@
- add_subdirectory(fake)
- add_subdirectory(qscreen)
--add_subdirectory(kwayland)
-+if(${KF5Wayland_FOUND})
-+	add_subdirectory(kwayland)
-+endif()
- 
- if(${XCB_RANDR_FOUND})
-     message(STATUS "Will build xrandr backend.")
+diff --git a/autotests/CMakeLists.txt b/autotests/CMakeLists.txt
+index 26c7952..3b5aabf 100644
 --- a/autotests/CMakeLists.txt
 +++ b/autotests/CMakeLists.txt
 @@ -1,6 +1,9 @@
@@ -43,7 +37,7 @@ are templates for supplementary fields that you might want to add:
  
  macro(KSCREEN_ADD_TEST)
      foreach(_testname ${ARGN})
-@@ -21,22 +24,24 @@
+@@ -21,22 +24,24 @@ kscreen_add_test(testconfigserializer)
  kscreen_add_test(testconfigmonitor)
  kscreen_add_test(testinprocess)
  
@@ -84,6 +78,22 @@ are templates for supplementary fields that you might want to add:
  
  
  if (ENABLE_XRANDR_TESTS)
+diff --git a/backends/CMakeLists.txt b/backends/CMakeLists.txt
+index 3563e13..5f44182 100644
+--- a/backends/CMakeLists.txt
++++ b/backends/CMakeLists.txt
+@@ -1,6 +1,8 @@
+ add_subdirectory(fake)
+ add_subdirectory(qscreen)
+-add_subdirectory(kwayland)
++if(${KF5Wayland_FOUND})
++	add_subdirectory(kwayland)
++endif()
+ 
+ if(${XCB_RANDR_FOUND})
+     message(STATUS "Will build xrandr backend.")
+diff --git a/tests/CMakeLists.txt b/tests/CMakeLists.txt
+index 1489d21..e82f7f7 100644
 --- a/tests/CMakeLists.txt
 +++ b/tests/CMakeLists.txt
 @@ -1,4 +1,6 @@
