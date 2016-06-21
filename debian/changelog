@@ -1,10 +1,9 @@
-libkscreen (4:5.6.5-1~1.gbpcc4f52) UNRELEASED; urgency=medium
+libkscreen (4:5.6.5-1) unstable; urgency=medium
 
-  ** SNAPSHOT build @cc4f5275c9d816f809fc5a062269db9e0151bd0d **
-
+  [ Automatic packaging ]
   * Refresh patches
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Tue, 14 Jun 2016 15:17:21 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 21 Jun 2016 19:53:25 +0200
 
 libkscreen (4:5.6.4-3) unstable; urgency=medium
 
