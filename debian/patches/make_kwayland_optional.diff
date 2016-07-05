@@ -4,16 +4,16 @@ Subject: make_kwayland_optional
 
 ---
  CMakeLists.txt           |  2 +-
- autotests/CMakeLists.txt | 39 ++++++++++++++++++++++-----------------
+ autotests/CMakeLists.txt | 36 ++++++++++++++++++++----------------
  backends/CMakeLists.txt  |  4 +++-
  tests/CMakeLists.txt     |  4 +++-
- 4 files changed, 29 insertions(+), 20 deletions(-)
+ 4 files changed, 27 insertions(+), 19 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 8c8a78d..aea9536 100644
+index 34dacb3..5d0032c 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -20,7 +20,7 @@ set(REQUIRED_QT_VERSION 5.2.0)
+@@ -20,7 +20,7 @@ set(REQUIRED_QT_VERSION 5.4.0)
  find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Core DBus Gui Test X11Extras)
  
  # Wayland backend
@@ -23,7 +23,7 @@ index 8c8a78d..aea9536 100644
  
  # xrandr backend
 diff --git a/autotests/CMakeLists.txt b/autotests/CMakeLists.txt
-index 26c7952..3b5aabf 100644
+index 2c8ee3d..8b0b346 100644
 --- a/autotests/CMakeLists.txt
 +++ b/autotests/CMakeLists.txt
 @@ -1,6 +1,9 @@
@@ -37,9 +37,9 @@ index 26c7952..3b5aabf 100644
  
  macro(KSCREEN_ADD_TEST)
      foreach(_testname ${ARGN})
-@@ -21,22 +24,24 @@ kscreen_add_test(testconfigserializer)
- kscreen_add_test(testconfigmonitor)
+@@ -22,24 +25,25 @@ kscreen_add_test(testconfigmonitor)
  kscreen_add_test(testinprocess)
+ kscreen_add_test(testbackendloader)
  
 -set(KSCREEN_WAYLAND_LIBS
 -    KF5::WaylandServer KF5::WaylandClient
@@ -51,33 +51,33 @@ index 26c7952..3b5aabf 100644
 -    ${CMAKE_SOURCE_DIR}/tests/kwayland/waylandtestserver.cpp
 -)
 -include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../backends/kwayland)
--
--kscreen_add_test(testkwaylandbackend)
--kscreen_add_test(testkwaylandconfig)
--
--set(KSCREEN_WAYLAND_LIBS "")
--set(KSCREEN_WAYLAND_SRCS "")
 +if(${KF5Wayland_FOUND})
 +    set(KSCREEN_WAYLAND_LIBS
 +        KF5::WaylandServer KF5::WaylandClient
 +    )
-+    
+ 
+-kscreen_add_test(testkwaylandbackend)
+-kscreen_add_test(testkwaylandconfig)
+-kscreen_add_test(testkwaylanddpms)
 +    # For WaylandConfigReader and TestServer
 +    set(KSCREEN_WAYLAND_SRCS
 +        ${CMAKE_SOURCE_DIR}/tests/kwayland/waylandconfigreader.cpp
 +        ${CMAKE_SOURCE_DIR}/tests/kwayland/waylandtestserver.cpp
 +    )
 +    include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../backends/kwayland)
-+    
+ 
+-set(KSCREEN_WAYLAND_LIBS "")
+-set(KSCREEN_WAYLAND_SRCS "")
 +    kscreen_add_test(testkwaylandbackend)
 +    kscreen_add_test(testkwaylandconfig)
-+    
++    kscreen_add_test(testkwaylanddpms)
+ 
 +    set(KSCREEN_WAYLAND_LIBS "")
 +    set(KSCREEN_WAYLAND_SRCS "")
 +endif()
  
- 
  if (ENABLE_XRANDR_TESTS)
+     kscreen_add_test(textxrandr)
 diff --git a/backends/CMakeLists.txt b/backends/CMakeLists.txt
 index 3563e13..5f44182 100644
 --- a/backends/CMakeLists.txt
