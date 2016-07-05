@@ -7,7 +7,7 @@ Build-Depends: cmake (>= 2.8.12),
                debhelper (>= 9),
                extra-cmake-modules (>= 5.14.0~),
                kwayland-dev [linux-any],
-               libqt5x11extras5-dev (>= 5.4),
+               libqt5x11extras5-dev (>= 5.4.0~),
                libx11-dev,
                libx11-xcb-dev,
                libxcb-randr0-dev,
@@ -15,7 +15,7 @@ Build-Depends: cmake (>= 2.8.12),
                libxrandr-dev,
                pkg-config,
                pkg-kde-tools (>= 0.15.15ubuntu1~),
-               qtbase5-dev (>= 5.4)
+               qtbase5-dev (>= 5.4.0~)
 Standards-Version: 3.9.8
 Homepage: https://projects.kde.org/projects/kde/workspace/libkscreen
 Vcs-Browser: https://anonscm.debian.org/git/pkg-kde/plasma/libkscreen.git
@@ -25,7 +25,7 @@ Package: libkf5screen-dev
 Section: libdevel
 Architecture: any
 Depends: libkf5screen7 (= ${binary:Version}),
-         qtbase5-dev (>= 5.4),
+         qtbase5-dev (>= 5.4.0~),
          ${misc:Depends}
 Description: library for screen management - development files
  The KDE multiple monitor support is trying be as smart as possible
