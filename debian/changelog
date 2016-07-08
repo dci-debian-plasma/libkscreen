@@ -1,11 +1,18 @@
-libkscreen (4:5.7.0-1~1.gbpd11a2c) UNRELEASED; urgency=medium
+libkscreen (4:5.7.0-1~2.gbp16d64e) UNRELEASED; urgency=medium
 
+  ** SNAPSHOT build @16d64ecfbaa8e7bfd8f1e011a9b92d33e3945102 **
+
+  [ Automatic packaging ]
   ** SNAPSHOT build @d11a2cb9987cb52ce21719c772bc6b1c821c1b6b **
 
   * Update build-deps and deps with the info from cmake
   * Refresh patches
+  * Update symbols files.
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Tue, 05 Jul 2016 17:30:22 +0200
+  [ Maximiliano Curia ]
+  * Update install files
+
+ -- Maximiliano Curia <maxy@gnuservers.com.ar>  Fri, 08 Jul 2016 15:37:21 +0200
 
 libkscreen (4:5.6.5-1) unstable; urgency=medium
 
