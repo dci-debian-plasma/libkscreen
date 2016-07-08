@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:5.6.2 amd64
+# SymbolsHelper-Confirmed: 4:5.7.0 amd64
 libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin (>= 4:5.6.2~)
  _ZN7KScreen13ConfigMonitor11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.1.1
  _ZN7KScreen13ConfigMonitor11qt_metacastEPKc@Base 5.1.1
@@ -28,11 +28,13 @@ libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin (>= 4:5.6.2~)
  _ZN7KScreen14BackendManager11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.1.1
  _ZN7KScreen14BackendManager11qt_metacastEPKc@Base 5.1.1
  _ZN7KScreen14BackendManager12backendReadyEP29OrgKdeKscreenBackendInterface@Base 5.1.1
+ _ZN7KScreen14BackendManager12listBackendsEv@Base 4:5.7.0
  _ZN7KScreen14BackendManager12startBackendERK7QStringRK4QMapIS1_8QVariantE@Base 4:5.5.0
  _ZN7KScreen14BackendManager14requestBackendEv@Base 5.1.1
  _ZN7KScreen14BackendManager14sMaxCrashCountE@Base 5.1.1
  _ZN7KScreen14BackendManager15shutdownBackendEv@Base 5.1.1
  _ZN7KScreen14BackendManager16emitBackendReadyEv@Base 5.1.1
+ _ZN7KScreen14BackendManager16preferredBackendERK7QString@Base 4:5.7.0
  _ZN7KScreen14BackendManager16staticMetaObjectE@Base 5.1.1
  _ZN7KScreen14BackendManager17loadBackendPluginEP13QPluginLoaderRK7QStringRK4QMapIS3_8QVariantE@Base 4:5.6.2
  _ZN7KScreen14BackendManager19invalidateInterfaceEv@Base 5.1.1
@@ -138,6 +140,7 @@ libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin (>= 4:5.6.2~)
  _ZN7KScreen6Config16setPrimaryOutputERK14QSharedPointerINS_6OutputEE@Base 5.1.1
  _ZN7KScreen6Config16staticMetaObjectE@Base 5.1.1
  _ZN7KScreen6Config20primaryOutputChangedERK14QSharedPointerINS_6OutputEE@Base 5.1.1
+ _ZN7KScreen6Config20setSupportedFeaturesERK6QFlagsINS0_7FeatureEE@Base 4:5.7.0
  _ZN7KScreen6Config5applyERK14QSharedPointerIS0_E@Base 5.1.1
  _ZN7KScreen6Config7Private11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:5.3.0
  _ZN7KScreen6Config7Private11qt_metacastEPKc@Base 4:5.3.0
@@ -247,6 +250,7 @@ libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin (>= 4:5.6.2~)
  _ZNK7KScreen6Config10metaObjectEv@Base 5.1.1
  _ZNK7KScreen6Config13primaryOutputEv@Base 5.1.1
  _ZNK7KScreen6Config16connectedOutputsEv@Base 5.1.1
+ _ZNK7KScreen6Config17supportedFeaturesEv@Base 4:5.7.0
  _ZNK7KScreen6Config5cloneEv@Base 5.1.1
  _ZNK7KScreen6Config6outputEi@Base 5.1.1
  _ZNK7KScreen6Config6screenEv@Base 5.1.1
