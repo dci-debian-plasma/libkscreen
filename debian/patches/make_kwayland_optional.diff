@@ -10,7 +10,7 @@ Subject: make_kwayland_optional
  4 files changed, 27 insertions(+), 19 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 34dacb3..5d0032c 100644
+index 40ca3dd..29285af 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -20,7 +20,7 @@ set(REQUIRED_QT_VERSION 5.4.0)
