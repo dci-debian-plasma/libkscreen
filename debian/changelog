@@ -1,11 +1,12 @@
-libkscreen (4:5.7.2-1~1.gbpbefed1) UNRELEASED; urgency=medium
+libkscreen (4:5.7.3-1~1.gbp9c6ee0) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @befed1ac3bffcbc1c1058ce02239b3b3cd5a5168 **
+  ** SNAPSHOT build @9c6ee0321fb3a145bc9ba4443f605ff03e10cdf7 **
 
   * Refresh patches
   * Refresh patches
+  * Refresh patches
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Tue, 19 Jul 2016 15:17:15 +0200
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Fri, 05 Aug 2016 12:50:49 +0200
 
 libkscreen (4:5.7.0-1) unstable; urgency=medium
 
