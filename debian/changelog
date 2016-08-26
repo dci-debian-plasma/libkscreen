@@ -1,19 +1,12 @@
-libkscreen (4:5.7.4-1~2.gbp2db445) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @2db445d8e2ade4f08e382dba7215ec17012f30f4 **
+libkscreen (4:5.7.4-1) unstable; urgency=medium
 
   [ Automatic packaging ]
-  ** SNAPSHOT build @70a4d9dff6347569bcc95c27e4756bd9c973de99 **
-
-  * Refresh patches
-  * Refresh patches
-  * Refresh patches
-  * Refresh patches
+  * New upstream release (5.7.4)
 
   [ Maximiliano Curia ]
   * Bump group breaks (5.7)
 
- -- Maximiliano Curia <maxy@gnuservers.com.ar>  Fri, 26 Aug 2016 11:17:15 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 26 Aug 2016 15:04:49 +0200
 
 libkscreen (4:5.7.0-1) unstable; urgency=medium
 
