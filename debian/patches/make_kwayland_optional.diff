@@ -10,7 +10,7 @@ Subject: make_kwayland_optional
  4 files changed, 27 insertions(+), 19 deletions(-)
 
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index aa536d9..02266ab 100644
+index 89be201..93d27b8 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
 @@ -20,7 +20,7 @@ set(REQUIRED_QT_VERSION 5.4.0)
@@ -23,7 +23,7 @@ index aa536d9..02266ab 100644
  
  # xrandr backend
 diff --git a/autotests/CMakeLists.txt b/autotests/CMakeLists.txt
-index 2c8ee3d..8b0b346 100644
+index 9f8cea7..3a3bc20 100644
 --- a/autotests/CMakeLists.txt
 +++ b/autotests/CMakeLists.txt
 @@ -1,6 +1,9 @@
@@ -37,9 +37,9 @@ index 2c8ee3d..8b0b346 100644
  
  macro(KSCREEN_ADD_TEST)
      foreach(_testname ${ARGN})
-@@ -22,24 +25,25 @@ kscreen_add_test(testconfigmonitor)
- kscreen_add_test(testinprocess)
+@@ -23,24 +26,25 @@ kscreen_add_test(testinprocess)
  kscreen_add_test(testbackendloader)
+ kscreen_add_test(testlog)
  
 -set(KSCREEN_WAYLAND_LIBS
 -    KF5::WaylandServer KF5::WaylandClient
