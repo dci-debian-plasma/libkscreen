@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:5.7.0 amd64
+# SymbolsHelper-Confirmed: 4:5.8.0 amd64 armhf i386
 libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin (>= 4:5.6.2~)
  _ZN7KScreen13ConfigMonitor11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.1.1
  _ZN7KScreen13ConfigMonitor11qt_metacastEPKc@Base 5.1.1
@@ -101,6 +101,17 @@ libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin (>= 4:5.6.2~)
  _ZN7KScreen18SetConfigOperationD0Ev@Base 5.1.1
  _ZN7KScreen18SetConfigOperationD1Ev@Base 5.1.1
  _ZN7KScreen18SetConfigOperationD2Ev@Base 5.1.1
+ _ZN7KScreen3Log10setContextERK7QString@Base 4:5.8.0
+ _ZN7KScreen3Log3logERK7QStringS3_@Base 4:5.8.0
+ _ZN7KScreen3Log8instanceEv@Base 4:5.8.0
+ _ZN7KScreen3Log9sInstanceE@Base 4:5.8.0
+ _ZN7KScreen3LogC1EPNS0_7PrivateE@Base 4:5.8.0
+ _ZN7KScreen3LogC1Ev@Base 4:5.8.0
+ _ZN7KScreen3LogC2EPNS0_7PrivateE@Base 4:5.8.0
+ _ZN7KScreen3LogC2Ev@Base 4:5.8.0
+ _ZN7KScreen3LogD0Ev@Base 4:5.8.0
+ _ZN7KScreen3LogD1Ev@Base 4:5.8.0
+ _ZN7KScreen3LogD2Ev@Base 4:5.8.0
  _ZN7KScreen4Edid11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.1.1
  _ZN7KScreen4Edid11qt_metacastEPKc@Base 5.1.1
  _ZN7KScreen4Edid16staticMetaObjectE@Base 5.1.1
@@ -220,6 +231,9 @@ libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin (>= 4:5.6.2~)
  _ZNK7KScreen18GetConfigOperation6configEv@Base 5.1.1
  _ZNK7KScreen18SetConfigOperation10metaObjectEv@Base 5.1.1
  _ZNK7KScreen18SetConfigOperation6configEv@Base 5.1.1
+ _ZNK7KScreen3Log7contextEv@Base 4:5.8.0
+ _ZNK7KScreen3Log7enabledEv@Base 4:5.8.0
+ _ZNK7KScreen3Log7logFileEv@Base 4:5.8.0
  _ZNK7KScreen4Edid10metaObjectEv@Base 5.1.1
  _ZNK7KScreen4Edid3redEv@Base 5.1.1
  _ZNK7KScreen4Edid4blueEv@Base 5.1.1
@@ -295,6 +309,7 @@ libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin (>= 4:5.6.2~)
  _ZTIN7KScreen15ConfigOperationE@Base 5.1.1
  _ZTIN7KScreen18GetConfigOperationE@Base 5.1.1
  _ZTIN7KScreen18SetConfigOperationE@Base 5.1.1
+ _ZTIN7KScreen3LogE@Base 4:5.8.0
  _ZTIN7KScreen4EdidE@Base 5.1.1
  _ZTIN7KScreen4ModeE@Base 5.1.1
  _ZTIN7KScreen6Config7PrivateE@Base 4:5.3.0
@@ -308,6 +323,7 @@ libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin (>= 4:5.6.2~)
  _ZTSN7KScreen15ConfigOperationE@Base 5.1.1
  _ZTSN7KScreen18GetConfigOperationE@Base 5.1.1
  _ZTSN7KScreen18SetConfigOperationE@Base 5.1.1
+ _ZTSN7KScreen3LogE@Base 4:5.8.0
  _ZTSN7KScreen4EdidE@Base 5.1.1
  _ZTSN7KScreen4ModeE@Base 5.1.1
  _ZTSN7KScreen6Config7PrivateE@Base 4:5.3.0
@@ -321,6 +337,7 @@ libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin (>= 4:5.6.2~)
  _ZTVN7KScreen15ConfigOperationE@Base 5.1.1
  _ZTVN7KScreen18GetConfigOperationE@Base 5.1.1
  _ZTVN7KScreen18SetConfigOperationE@Base 5.1.1
+ _ZTVN7KScreen3LogE@Base 4:5.8.0
  _ZTVN7KScreen4EdidE@Base 5.1.1
  _ZTVN7KScreen4ModeE@Base 5.1.1
  _ZTVN7KScreen6Config7PrivateE@Base 4:5.3.0
