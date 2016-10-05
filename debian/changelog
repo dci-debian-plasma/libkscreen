@@ -1,6 +1,6 @@
-libkscreen (4:5.8.0-1~2.gbp5d6aa7) UNRELEASED; urgency=medium
+libkscreen (4:5.8.0-1~3.gbp6b96f1) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @5d6aa7eaf0284f4c3bafd7997b57bbc74afdc415 **
+  ** SNAPSHOT build @6b96f133f7bcb754a9d1be726bafd37c277c3d3a **
 
   [ Automatic packaging ]
   ** SNAPSHOT build @f1ef3bb81c47d15cf0abd300e0b75a331515fb24 **
@@ -11,8 +11,9 @@ libkscreen (4:5.8.0-1~2.gbp5d6aa7) UNRELEASED; urgency=medium
 
   [ Maximiliano Curia ]
   * Replace dbus-launch with dbus-run-session in tests
+  * UNRELEASED
 
- -- Maximiliano Curia <maxy@gnuservers.com.ar>  Wed, 05 Oct 2016 19:17:30 +0200
+ -- Maximiliano Curia <jenkins@gnuservers.com.ar>  Wed, 05 Oct 2016 19:25:37 +0200
 
 libkscreen (4:5.7.4-1) unstable; urgency=medium
 
