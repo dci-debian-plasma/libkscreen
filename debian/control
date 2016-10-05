@@ -6,7 +6,7 @@ Uploaders: Maximiliano Curia <maxy@debian.org>
 Build-Depends: cmake (>= 2.8.12),
                debhelper (>= 9),
                extra-cmake-modules (>= 5.14.0~),
-               libkf5kwayland-dev [linux-any],
+               libkf5wayland-dev [linux-any],
                libqt5x11extras5-dev (>= 5.4.0~),
                libx11-dev,
                libx11-xcb-dev,
