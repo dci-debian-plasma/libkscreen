@@ -6,4 +6,4 @@ export HOME=$(mktemp -d)
 trap "rm -rf ${HOME}" EXIT
 
 xvfb-run -a --server-args="-screen 0 1024x768x24" \
-    dbus-launch --exit-with-session dh_auto_test
+    dbus-run-session -- dh_auto_test
