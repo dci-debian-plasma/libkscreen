@@ -1,3 +1,11 @@
+libkscreen (4:5.8.2-1~1.gbp2ecc18) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @2ecc18f56fa96faee63e6ec2928b275e28061ee1 **
+
+  * Refresh patches
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Tue, 18 Oct 2016 15:17:39 +0200
+
 libkscreen (4:5.8.1-1) unstable; urgency=medium
 
   [ Automatic packaging ]
