@@ -1,11 +1,12 @@
-libkscreen (4:5.8.4-1~1.gbp2aa91c) UNRELEASED; urgency=medium
+libkscreen (4:5.8.4-1) unstable; urgency=medium
 
-  ** SNAPSHOT build @2aa91c878464b78eedb5bd7f9d87c8b975df2f35 **
-
-  * Refresh patches
+  [ Automatic packaging ]
   * Refresh patches
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Tue, 22 Nov 2016 15:17:43 +0100
+  [ Maximiliano Curia ]
+  * New upstream release (5.8.4)
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 23 Nov 2016 18:37:14 +0100
 
 libkscreen (4:5.8.2-1) unstable; urgency=medium
 
