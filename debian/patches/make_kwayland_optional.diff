@@ -9,11 +9,9 @@ Subject: make_kwayland_optional
  tests/CMakeLists.txt     |  4 +++-
  4 files changed, 27 insertions(+), 19 deletions(-)
 
-diff --git a/CMakeLists.txt b/CMakeLists.txt
-index 8515e95..a66cf5b 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -20,7 +20,7 @@ set(REQUIRED_QT_VERSION 5.4.0)
+@@ -20,7 +20,7 @@
  find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Core DBus Gui Test X11Extras)
  
  # Wayland backend
@@ -22,8 +20,6 @@ index 8515e95..a66cf5b 100644
  add_feature_info("KF5Wayland" KF5Wayland_FOUND "Required for building libkscreen's KWayland backend")
  
  # xrandr backend
-diff --git a/autotests/CMakeLists.txt b/autotests/CMakeLists.txt
-index 9f8cea7..3a3bc20 100644
 --- a/autotests/CMakeLists.txt
 +++ b/autotests/CMakeLists.txt
 @@ -1,6 +1,9 @@
@@ -37,9 +33,9 @@ index 9f8cea7..3a3bc20 100644
  
  macro(KSCREEN_ADD_TEST)
      foreach(_testname ${ARGN})
-@@ -23,24 +26,25 @@ kscreen_add_test(testinprocess)
- kscreen_add_test(testbackendloader)
+@@ -24,24 +27,25 @@
  kscreen_add_test(testlog)
+ kscreen_add_test(testmodelistchange)
  
 -set(KSCREEN_WAYLAND_LIBS
 -    KF5::WaylandServer KF5::WaylandClient
@@ -51,35 +47,36 @@ index 9f8cea7..3a3bc20 100644
 -    ${CMAKE_SOURCE_DIR}/tests/kwayland/waylandtestserver.cpp
 -)
 -include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../backends/kwayland)
+-
+-kscreen_add_test(testkwaylandbackend)
+-kscreen_add_test(testkwaylandconfig)
+-kscreen_add_test(testkwaylanddpms)
+-
+-set(KSCREEN_WAYLAND_LIBS "")
+-set(KSCREEN_WAYLAND_SRCS "")
+-
 +if(${KF5Wayland_FOUND})
 +    set(KSCREEN_WAYLAND_LIBS
 +        KF5::WaylandServer KF5::WaylandClient
 +    )
- 
--kscreen_add_test(testkwaylandbackend)
--kscreen_add_test(testkwaylandconfig)
--kscreen_add_test(testkwaylanddpms)
++
 +    # For WaylandConfigReader and TestServer
 +    set(KSCREEN_WAYLAND_SRCS
 +        ${CMAKE_SOURCE_DIR}/tests/kwayland/waylandconfigreader.cpp
 +        ${CMAKE_SOURCE_DIR}/tests/kwayland/waylandtestserver.cpp
 +    )
 +    include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../backends/kwayland)
- 
--set(KSCREEN_WAYLAND_LIBS "")
--set(KSCREEN_WAYLAND_SRCS "")
++
 +    kscreen_add_test(testkwaylandbackend)
 +    kscreen_add_test(testkwaylandconfig)
 +    kscreen_add_test(testkwaylanddpms)
- 
++
 +    set(KSCREEN_WAYLAND_LIBS "")
 +    set(KSCREEN_WAYLAND_SRCS "")
 +endif()
  
  if (ENABLE_XRANDR_TESTS)
      kscreen_add_test(textxrandr)
-diff --git a/backends/CMakeLists.txt b/backends/CMakeLists.txt
-index 3563e13..5f44182 100644
 --- a/backends/CMakeLists.txt
 +++ b/backends/CMakeLists.txt
 @@ -1,6 +1,8 @@
@@ -92,8 +89,6 @@ index 3563e13..5f44182 100644
  
  if(${XCB_RANDR_FOUND})
      message(STATUS "Will build xrandr backend.")
-diff --git a/tests/CMakeLists.txt b/tests/CMakeLists.txt
-index 1489d21..e82f7f7 100644
 --- a/tests/CMakeLists.txt
 +++ b/tests/CMakeLists.txt
 @@ -1,4 +1,6 @@
