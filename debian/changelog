@@ -1,9 +1,9 @@
-libkscreen (4:5.8.6-1~) UNRELEASED; urgency=medium
+libkscreen (4:5.8.6-1) experimental; urgency=medium
 
   * New upstream release (5.8.6)
     + Disable kscreen.log logging by default (Closes: 846940)
 
- -- Maximiliano Curia <maxy@debian.org>  Mon, 13 Mar 2017 11:02:15 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 13 Mar 2017 11:33:19 +0100
 
 libkscreen (4:5.8.5-1) experimental; urgency=medium
 
