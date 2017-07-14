@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:5.8.5 amd64
+# SymbolsHelper-Confirmed: 4:5.10.3 amd64
 libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin (>= 4:5.6.2~)
  _ZN7KScreen13ConfigMonitor11qt_metacallEN11QMetaObject4CallEiPPv@Base 5.1.1
  _ZN7KScreen13ConfigMonitor11qt_metacastEPKc@Base 5.1.1
@@ -172,6 +172,7 @@ libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin (>= 4:5.6.2~)
  _ZN7KScreen6Output11setRotationENS0_8RotationE@Base 5.1.1
  _ZN7KScreen6Output11sizeChangedEv@Base 4:5.4.0
  _ZN7KScreen6Output12modesChangedEv@Base 4:5.8.5
+ _ZN7KScreen6Output12scaleChangedEv@Base 4:5.10.3
  _ZN7KScreen6Output12setConnectedEb@Base 5.1.1
  _ZN7KScreen6Output13clonesChangedEv@Base 5.1.1
  _ZN7KScreen6Output13outputChangedEv@Base 5.1.1
@@ -193,6 +194,7 @@ libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin (>= 4:5.6.2~)
  _ZN7KScreen6Output7setSizeERK5QSize@Base 4:5.4.0
  _ZN7KScreen6Output7setTypeENS0_4TypeE@Base 5.1.1
  _ZN7KScreen6Output8setModesERK4QMapI7QString14QSharedPointerINS_4ModeEEE@Base 5.1.1
+ _ZN7KScreen6Output8setScaleEd@Base 4:5.10.3
  _ZN7KScreen6Output9setClonesE5QListIiE@Base 5.1.1
  _ZN7KScreen6Output9setSizeMmERK5QSize@Base 5.1.1
  _ZN7KScreen6OutputC1EPNS0_7PrivateE@Base 5.1.1
@@ -290,6 +292,7 @@ libKF5Screen.so.7 libkf5screen7 #MINVER#, libkf5screen-bin (>= 4:5.6.2~)
  _ZNK7KScreen6Output4typeEv@Base 5.1.1
  _ZNK7KScreen6Output5cloneEv@Base 5.1.1
  _ZNK7KScreen6Output5modesEv@Base 5.1.1
+ _ZNK7KScreen6Output5scaleEv@Base 4:5.10.3
  _ZNK7KScreen6Output6clonesEv@Base 5.1.1
  _ZNK7KScreen6Output6sizeMmEv@Base 5.1.1
  _ZNK7KScreen6Output7Private11biggestModeERK4QMapI7QString14QSharedPointerINS_4ModeEEE@Base 5.1.1
