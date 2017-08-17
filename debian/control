@@ -15,18 +15,35 @@ Build-Depends: cmake (>= 2.8.12),
                libxrandr-dev,
                pkg-config,
                pkg-kde-tools (>= 0.15.15ubuntu1~),
-               qtbase5-dev (>= 5.4.0~)
+               qtbase5-dev (>= 5.4.0~),
 Standards-Version: 4.0.0
 Homepage: https://projects.kde.org/projects/kde/workspace/libkscreen
 Vcs-Browser: https://anonscm.debian.org/git/pkg-kde/plasma/libkscreen.git
 Vcs-Git: https://anonscm.debian.org/git/pkg-kde/plasma/libkscreen.git
+
+Package: libkf5screen-bin
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: kscreen (<< 4:5.10),
+        libkf5screen5,
+        libkf5screen6,
+        libpowerdevilcore2 (<< 4:5.10),
+        plasma-workspace (<< 4:5.7),
+Replaces: libkf5screen5, libkf5screen6
+Description: library for screen management - helpers
+ The KDE multiple monitor support is trying be as smart as possible
+ adapting the behavior of it to each use case making the configuration
+ of monitors as simple as plugging them to your computer.
+ .
+ This package contains the library helpers and the corresponding dbus service.
 
 Package: libkf5screen-dev
 Section: libdevel
 Architecture: any
 Depends: libkf5screen7 (= ${binary:Version}),
          qtbase5-dev (>= 5.4.0~),
-         ${misc:Depends}
+         ${misc:Depends},
 Description: library for screen management - development files
  The KDE multiple monitor support is trying be as smart as possible
  adapting the behavior of it to each use case making the configuration
@@ -46,21 +63,4 @@ Description: library for screen management - shared library
  This package contains the shared library
 Breaks: kscreen (<< 4:5.10),
         libpowerdevilcore2 (<< 4:5.10),
-        plasma-workspace (<< 4:5.7)
-
-Package: libkf5screen-bin
-Architecture: any
-Multi-Arch: foreign
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: kscreen (<< 4:5.10),
-        libkf5screen5,
-        libkf5screen6,
-        libpowerdevilcore2 (<< 4:5.10),
-        plasma-workspace (<< 4:5.7)
-Replaces: libkf5screen5, libkf5screen6
-Description: library for screen management - helpers
- The KDE multiple monitor support is trying be as smart as possible
- adapting the behavior of it to each use case making the configuration
- of monitors as simple as plugging them to your computer.
- .
- This package contains the library helpers and the corresponding dbus service.
+        plasma-workspace (<< 4:5.7),
