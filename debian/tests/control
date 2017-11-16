@@ -1,3 +1,4 @@
-# Tests: testsuite
-# Depends: @, @builddeps@, build-essential
-# Restrictions: build-needed
+Tests: testsuite
+Depends: @, @builddeps@, build-essential,
+         xvfb, xauth, dbus-x11, xserver-xephyr, libkf5service-bin
+Restrictions: build-needed
