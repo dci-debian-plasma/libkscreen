@@ -57,7 +57,7 @@ Description: library for screen management - shared library
 
 Package: libkscreen-dbg
 Section: debug
-Priority: extra
+Priority: optional
 Architecture: any
 Recommends: qtbase5-dbg
 Depends: libkf5screen7 (= ${binary:Version}), ${misc:Depends}
@@ -67,3 +67,4 @@ Description: library for screen management - debug info
  of monitors as simple as plugging them to your computer.
  .
  This package contains the debugging symbols.
+
