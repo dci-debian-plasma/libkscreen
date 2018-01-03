@@ -25,10 +25,10 @@ Package: libkf5screen-bin
 Architecture: any
 Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: kscreen (<< 4:5.10),
+Breaks: kscreen (<< 4:5.11),
         libkf5screen5,
         libkf5screen6,
-        libpowerdevilcore2 (<< 4:5.10),
+        libpowerdevilcore2 (<< 4:5.11),
         plasma-workspace (<< 4:5.7),
 Replaces: libkf5screen5, libkf5screen6
 Description: library for screen management - helpers
@@ -61,6 +61,6 @@ Description: library for screen management - shared library
  of monitors as simple as plugging them to your computer.
  .
  This package contains the shared library
-Breaks: kscreen (<< 4:5.10),
-        libpowerdevilcore2 (<< 4:5.10),
+Breaks: kscreen (<< 4:5.11),
+        libpowerdevilcore2 (<< 4:5.11),
         plasma-workspace (<< 4:5.7),
